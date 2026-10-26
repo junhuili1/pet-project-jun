@@ -1,20 +1,20 @@
 import random
 
 class Pet:
-    def __init__(self, name, hunger=random.randint(5,10), fun=random.randint(5,10), health=random.randint(5,10), energy=random.randint(5,10)):
+    def __init__(self, name, hunger=random.randint(5,9), fun=random.randint(5,9), health=random.randint(5,9), energy=random.randint(5,9)):
         self.name = name
         self.hunger = hunger
         self.fun = fun
         self.health = health
         self.energy = energy
     def feed(self):
-        self.hunger += random.randint(3,7)
+        self.hunger += random.randint(3,6)
     def play(self):
-        self.fun += random.randint(3,7)
+        self.fun += random.randint(3,6)
     def heal(self):
-        self.health += random.randint(3,7)
+        self.health += random.randint(3,6)
     def sleep(self):
-        self.energy += random.randint(3,7)
+        self.energy += random.randint(3,6)
 
 name = input("What would you like to name your pet?").capitalize()
 pet = Pet(name)
